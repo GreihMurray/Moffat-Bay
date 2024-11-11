@@ -17,8 +17,10 @@ public class BaseController {
     @Autowired
     MainService mainService;
 
+    //This is the endpoint and request type for the api
     @GetMapping("/users")
     public ResponseEntity<?> getUsers(){
+        //Returning ResponseEntity seems to fix a weird error I was seeing
         return ResponseEntity.ok(mainService.getUsers());
     }
 }

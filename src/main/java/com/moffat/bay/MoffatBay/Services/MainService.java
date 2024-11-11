@@ -13,6 +13,8 @@ public class MainService {
     UserRepository userRepository;
 
     public List<User> getUsers(){
+        //Spring has a lot of helpful methods by default for DB
+        //Can findAll, save, saveAll, findById, etc
         return userRepository.findAll();
     }
 }
