@@ -7,5 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-
+    @Query(nativeQuery = true, value = "SELECT * FROM users WHERE Email = ?1 AND BINARY Password = ?2")
+    public User loginUser(String email, String password);
 }
