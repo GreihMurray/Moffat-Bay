@@ -1,6 +1,7 @@
 package com.moffat.bay.MoffatBay.Controllers;
 
 import com.moffat.bay.MoffatBay.Domains.UserLogin;
+import com.moffat.bay.MoffatBay.Domains.UserRegistration;
 import com.moffat.bay.MoffatBay.Entities.User;
 import com.moffat.bay.MoffatBay.Services.MainService;
 import com.moffat.bay.MoffatBay.Services.UserService;
@@ -39,6 +40,21 @@ public class BaseController {
             return ResponseEntity.ok("signedIn");
         } else{
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> registerUser(@RequestBody UserRegistration registration){
+        if(registration.isValid()){
+            boolean registered = userService.registerUser(registration);
+
+            if(registered){
+                return ResponseEntity.ok().build();
+            } else{
+                return ResponseEntity.internalServerError().body("Error registering");
+            }
+        } else{
+            return ResponseEntity.badRequest().body(registration.getError());
         }
     }
 }
