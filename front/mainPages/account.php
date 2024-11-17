@@ -4,12 +4,15 @@
     require_once('../border/header.php');
 ?>
 
+<?php header('Access-Control-Allow-Origin: *'); ?>
+
 <link rel="stylesheet" type="text/css" href="<?php echo css ?>login.css">
 
 <?php
 	echo '
-	<script>	
+	<script>
 	function userLogin(){
+		console.log("TOTOTOTOTO")
 		var xmlHttp = new XMLHttpRequest();
 		var url = "http://localhost:8081/moffat/bay/login"
 		
@@ -23,10 +26,13 @@
 		};
 		
 		let body = {
-			email: document.getElementById("email").value,
-			password: document.getElementById("password").value
+			"email": document.getElementById("emailIn").value,
+			"password": document.getElementById("passwordIn").value
 		}
-		xmlHttp.send(data)
+		
+		console.log(body)
+		
+		xmlHttp.send(body)
 	}
 	</script>'
 ?>
@@ -39,11 +45,11 @@
         <!-- Login Form -->
 		<div class="formBox">
 			<h3>Login</h3>
-			<form action="/login" method="POST">
+			<form method="post" action="../functions/userLogin.php">
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
+				<input type="email" id="emailIn" name="email" required>
 				<label for="password">Password:</label>
-				<input type="password" id="password" name="password" required>
+				<input type="password" id="passwordIn" name="password" required>
 				<button type="submit" class="submitButton">Login</button>
 			</form>
 			<p class="swapText">Don't have an account? <a href="?action=register">Register here</a></p>
@@ -54,7 +60,7 @@
         <!-- Registration Form -->
 		<div class="formBox">
 			<h3>Register</h3>
-			<form action="/register" method="POST">
+			<form action="../functions/userRegistration.php" method="POST">
 				<label for="firstName">Full Name:</label>
 				<input type="text" id="firstName" name="firstName" required>
 				<label for="lastName">Last Name:</label>
