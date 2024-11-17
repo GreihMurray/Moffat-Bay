@@ -7,16 +7,15 @@ import com.moffat.bay.MoffatBay.Services.MainService;
 import com.moffat.bay.MoffatBay.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Controller
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/moffat/bay")
 public class BaseController {
     @Autowired
@@ -32,13 +31,15 @@ public class BaseController {
         return ResponseEntity.ok(mainService.getUsers());
     }
 
-    @GetMapping("/login")
+    @PostMapping(path = "/login")
     public ResponseEntity<?> loginUser(@RequestBody UserLogin userLogin){
         Boolean canLogin = userService.canSignIn(userLogin.getEmail(), userLogin.getPassword());
 
         if(canLogin){
+            System.out.println("True");
             return ResponseEntity.ok("signedIn");
         } else{
+            System.out.println("false");
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }
     }
