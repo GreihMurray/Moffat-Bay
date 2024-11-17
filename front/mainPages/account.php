@@ -36,10 +36,10 @@
 				<input type="text" id="lastName" name="lastName" required>
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" required>
-				<label for="phoneNumber">Phone Number:</label>
-				<input type="text" id="phoneNumber" name="phoneNumber" required>
 				<label for="confirmPassword">Confirm Password:</label>
 				<input type="password" id="confirmPassword" name="confirmPassword" required>
 				<button type="submit" class="submitButton">Register</button>
