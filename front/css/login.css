@@ -1,0 +1,87 @@
+/* login.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.loginRegistrationBox {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.loginRegistrationBox img {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.viewGalleryButton {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.viewGalleryButton:hover {
+    background-color: #005bb5;
+}
+
+.loginRegistrationForm {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.swapText {
+	margin-top:10px;
+	text-align: center;
+}
+
+.formBox {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formBox h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formBox label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.formBox input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.submitButton:hover {
+    background-color: #218838;
+}
