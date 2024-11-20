@@ -20,6 +20,10 @@ public class Reservation {
     private User user;
 
     @ManyToMany
+    @JoinTable(name = "reservation_rooms",
+        joinColumns = @JoinColumn(name="ReservationId"),
+            inverseJoinColumns = @JoinColumn(name = "RoomId")
+    )
     private Set<Room> rooms;
 
     @Column(name = "CheckInDate")
