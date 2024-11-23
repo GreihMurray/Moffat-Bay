@@ -39,22 +39,26 @@
 }
 .nav {
 	background-color: #8B4513;
-	margin: auto;
-	font
+	margin: auto;	
 }
 .nav a  {
     color: green;
-    padding: 1rem;
     cursor: pointer;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 0px;
     text-decoration: none;
     font-size: 1.4rem;
     font-stretch: 4px;
     border: 2px solid;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     border-width: 2px;
+	overflow: none;
 }
  #footer{
      display: flex;
+	 margin-top: auto;
      background-color: #8B4513;
      justify-content: space-between;
      color: green;

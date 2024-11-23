@@ -5,7 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 80vh;
+}
 .loginRegistrationBox {
     text-align: center;
     padding: 50px 0;
@@ -51,6 +55,7 @@ h2 {
     width: 30%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 150px;
 }
 
 .formBox h3 {
@@ -70,6 +75,31 @@ h2 {
     margin: 5px 0 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+#message{
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.valid {
+  color: green;
+}
+.valid:before {
+  text-align: left;
+  left: -35px;
+  content: " \2713";
+}
+.invalid {
+  color: red;
+}
+.invalid:before {
+  position: fixed;
+  left: -35px;
+  content: " \0078";
 }
 
 .submitButton {

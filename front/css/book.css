@@ -1,5 +1,9 @@
 /* Greih Murray, Sam Bachman, Fatih Suljovic, Cody Ferre CSD460 Capstone Software Development */
-
+.bookContainer{
+	display: flex;
+	flex-direction: column;
+	min-height: 80vh;
+}
 .bookingBox{
   position: relative;
   width: 100%;

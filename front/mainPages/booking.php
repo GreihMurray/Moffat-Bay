@@ -8,11 +8,11 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo css ?>book.css">
 
-
-<div class="bookingBox">
-<img src="../images/bookingMainBox.jpg" alt="Image of the interior of cabin">
-<button>View Gallery</button>
-</div>
+<div class="bookContainer">
+	<div class="bookingBox">
+	<img src="../images/bookingMainBox.jpg" alt="Image of the interior of cabin">
+	<button>View Gallery</button>
+	</div>
 
 <div class="bookingRow">
     <div class="bookingRowBox">
@@ -30,6 +30,7 @@
         Calendar
         <button class="bookingBoxButton">Check Availability</button>
     </div> 
+</div>
 </div>
 <?php
 	require_once "../border/footer.php";
