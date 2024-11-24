@@ -1,0 +1,91 @@
+/* Greih Murray, Sam Bachman, Fatih Suljovic, Cody Ferre CSD460 Capstone Software Development */
+
+.aboutContain{
+	background-image: url("../images/border.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+}
+.storyBox h5{
+	width: 190px;
+	height: 40px;
+	font-size: 32px;
+	margin-left: 520px;
+	color: white;
+}
+.story {
+	float: right;
+}
+.storyBox p{
+	width: 520px;
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	margin-right: 335px;
+	margin-top: 50px;
+	color: white;
+}
+.storyImg{
+	width: 35%;
+	height: 30%;
+	margin-left: 270px;
+	margin-top: 5px;
+}
+.historyBox h5{
+	font-size: 32px;
+	margin-top: 30px;
+	margin-left: 815px;
+	color: white;
+}
+.historyImg{
+	width: 35%;
+	height: 30%;
+	margin-left: 575px;
+	margin-top: 10px;
+}
+.historyBox p{
+	font-size: 18px;
+	text-align: center;
+	width: 35%;
+	height: 30%;
+	margin-left: 575px;
+	color: white;
+}
+.contactBox{
+	display: flex;
+	min-height: 60vh;
+	flex-direction: column;
+}
+.contactBox h6 {
+	font-size: 32px;
+	margin-top: 30px;
+	margin-left: 815px;
+	color: white;
+}
+.contactBox form {
+	text-align: center;
+	background-color: #fff;
+    padding: 20px;
+    width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-left: 690px;
+	font-size: 24px;
+}
+.contactBox label{
+	display: block;
+    color: #555;
+	text-decoration: underline;
+}
+.contactBox input{
+	width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contactBox button{
+	height: 10%;
+	width: 35%;
+	padding: 5px;
+	font-size: 18px;
+}
