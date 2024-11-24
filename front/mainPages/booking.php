@@ -20,10 +20,25 @@
         Feature Rooms
     </div>
     <div class="bookingRowBox">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vero quasi maxime. Autem est unde ducimus ullam quia provident. Natus perferendis nihil nam temporibus culpa illo! Rem atque ab iusto?
+        m temporibus culpa illo! Rem atque ab iusto?
     </div>
     <div class="bookingRowBox">
-        Availability
+		<input id="calendar-selectrange" hidden="hidden">
+		<script>
+            let fp = flatpickr('#calendar-selectrange',{
+                "mode": "range",
+                "inline": true,
+                onValueUpdate: [function(date, dateStr){
+                    let startDate = dateStr;
+                    startDate = startDate.slice(0,10);
+                    let endDate = dateStr.slice(14,25);
+                    document.getElementById("startDate").value = startDate;
+                    document.getElementById("endDate").value = endDate;
+                    getPrice();
+
+                }]
+            });
+        </script>
         <button class="bookingBoxButton">Book Now</button>
     </div>
     <div class="bookingRowBox">
