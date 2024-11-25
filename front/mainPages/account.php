@@ -8,34 +8,6 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo css ?>login.css">
 
-<?php
-	echo '
-	<script>
-	function userLogin(){
-		console.log("TOTOTOTOTO")
-		var xmlHttp = new XMLHttpRequest();
-		var url = "http://localhost:8081/moffat/bay/login"
-		
-		xmlHttp.open("POST", url, true)
-		xmlHttp.setRequestHeader("Content-Type", "application/json")
-		
-		xmlHttp.onreadystatechange = function () {
-			if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-				var json = JSON.parse(xmlHttp.responseText);
-			}
-		};
-		
-		let body = {
-			"email": document.getElementById("emailIn").value,
-			"password": document.getElementById("passwordIn").value
-		}
-		
-		console.log(body)
-		
-		xmlHttp.send(body)
-	}
-	</script>'
-?>
 <div class="formContainer">
 <div class="loginRegistrationForm">
     <?php
