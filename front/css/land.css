@@ -1,5 +1,5 @@
 /* Greih Murray, Sam Bachman, Fatih Suljovic, Cody Ferre CSD460 Capstone Software Development */
-.gallry {
+.gallery {
   padding: 0px;
   object-fit: cover;
 }
@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 100%;
   height: 700px;
+  object-fit: cover;
 }
 
 .offer {

@@ -20,6 +20,7 @@
 <body>
 	<div class="header">
 		<div class="topTitle">
+			<img src="../images/Fish.jpg" href="<?php echo $home ?>">
 			<a href="<?php echo $home ?>"<h1>Moffat Bay Lodge<h1></a>
 		</div>
 	<a id="menu" class="menu" onclick="onMenuClick()"></a>
