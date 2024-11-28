@@ -1,0 +1,89 @@
+/* reservationLookup.css */
+
+.lookupContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    padding: 20px;
+}
+
+.lookupForm {
+    background-color: green;
+    padding: 20px;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lookupForm label {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.lookupForm input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.lookupForm .submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lookupForm .submitButton:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.lookupView {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lookupView h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lookupItem {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lookupItem p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.lookupItem hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}

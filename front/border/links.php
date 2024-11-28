@@ -7,5 +7,6 @@
 		"Attractions" => view."mainPages/attractions.php",
 		"About" => view."mainPages/about.php",
 		"Account" => view."mainPages/account.php",
+		"ReservationLookup" => view."mainPages/reservationLookup.php",
 	];
 $home = $pages["Landing"];

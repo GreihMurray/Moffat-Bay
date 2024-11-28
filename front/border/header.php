@@ -31,7 +31,8 @@
 		<a id="attract" href="<?php echo $pages["Attractions"]?>">Attractions</a>
 		<a id="about" href="<?php echo $pages["About"]?>">About Us</a>
 		<a id="account" href="<?php echo $pages["Account"]?>">Login/Register</a>
-		<?php	
+		<a id="reservationLookup" href="<?php echo $pages["ReservationLookup"]?>">Reservation Lookup</a>
+		<?php
 			if(isset($_SESSION["customer"])){
 				unset($pages["LoginRegist"]);
 			}
