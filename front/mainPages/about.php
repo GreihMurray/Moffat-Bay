@@ -29,7 +29,7 @@
 	</div>
 	<div class="contactBox">
 		<h6>Let us Contact You!</h6>
-		<form method="post">
+		<form method="post" action="../functions/contactForm.php">
 			<label for="name">Name</label>
 			<input type="text" id="nameIn" name="name" required>
 			<label for="email">Email</label>

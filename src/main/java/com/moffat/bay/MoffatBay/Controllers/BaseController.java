@@ -1,10 +1,12 @@
 package com.moffat.bay.MoffatBay.Controllers;
 
+import com.moffat.bay.MoffatBay.Domains.Contact;
 import com.moffat.bay.MoffatBay.Domains.ReservationRequest;
 import com.moffat.bay.MoffatBay.Domains.UserLogin;
 import com.moffat.bay.MoffatBay.Domains.UserRegistration;
 import com.moffat.bay.MoffatBay.Entities.Reservation;
 import com.moffat.bay.MoffatBay.Services.BookingService;
+import com.moffat.bay.MoffatBay.Services.ContactService;
 import com.moffat.bay.MoffatBay.Services.MainService;
 import com.moffat.bay.MoffatBay.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ public class BaseController {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    ContactService contactService;
 
     @Autowired
     BookingService bookingService;
@@ -71,6 +76,18 @@ public class BaseController {
             return ResponseEntity.ok().build();
         } catch (Exception e){
             return ResponseEntity.internalServerError().body("Error booking");
+        }
+    }
+
+    @PostMapping("/contact")
+    public ResponseEntity<?> contactUs(@RequestBody Contact contact){
+
+        Boolean result = contactService.sendMail(contact);
+
+        if(result){
+            return ResponseEntity.ok().build();
+        } else{
+            return ResponseEntity.internalServerError().body("Error");
         }
     }
 
