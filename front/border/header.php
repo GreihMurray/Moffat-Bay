@@ -18,6 +18,7 @@
 	<title><?php echo $title?></title>
 </head>
 <body>
+	<!-- Title -->
 	<div class="header">
 		<div class="topTitle">
 			<img src="../images/Fish.jpg" href="<?php echo $home ?>">
@@ -25,6 +26,7 @@
 		</div>
 	<a id="menu" class="menu" onclick="onMenuClick()"></a>
 		<i class="fa fa-bars"></i>
+		<!-- Navbar -->
 	<div id="navBar" class="nav">
 	
 		<a id="book" href="<?php echo $pages["Booking"]?>">Booking</a>

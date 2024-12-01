@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo css ?>reserve.css">
 
 <div class="reservContainer">
-	<form id="formContain" method="post">
+	<form id="formContain" method="post" action="../createRes.php" >
 	<div class="reserveForm">
 		<div class="roomInfo">
 			<img class="roomImg" src="../images/featureRooms.jpg">
@@ -42,11 +42,22 @@
 		</div>
 		<div class="buttons">
 			<button class="confirmbutt">Confirm</button>
-			<button class="cancelbutt">Cancel</button>
+			<button class="cancelbutt" onclick="location.href='../mainPages/booking.php'">Cancel</button>
 		</div>
 	</div>
 	</form>
 </div>
+<script>
+
+	    function dateDiff(k, j) {
+        const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+        const calc1 = Date.UTC(k.getFullYear(), k.getMonth(), k.getDate());
+        const calc2 = Date.UTC(j.getFullYear(), j.getMonth(), j.getDate());
+
+        return Math.floor((calc2 - calc1) / _MS_PER_DAY);
+
+</script>
 
 <?php
 	require_once "../border/footer.php";
