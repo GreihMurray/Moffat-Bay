@@ -86,7 +86,7 @@ require_once('../border/header.php');
                 <div class="list-group mb-3">
 					<!-- Room 1 -->
                     <option href="#" class="list-group-item list-group-item-action">
-                        <h5 class="mb-1">Room 1: Standard Room<br></br></h5>
+                        <h5 class="mb-1">Room 1: Standard Room<br><br></h5>
                         <p class="mb-1">A cozy room with two Full beds and a forest view.</p>
                         <small>$126.00/night</small>
                     </option>
@@ -110,6 +110,7 @@ require_once('../border/header.php');
                         <small>$168.00/night</small>
                     </option>
 					</select>
+					</form>
                 </div>
                 <!-- Calendar Section -->
                 <h5 class="mb-3">Check Availability</h5>
@@ -119,6 +120,9 @@ require_once('../border/header.php');
                <a href="../mainPages/roomRes.php" <button type="button" class="btn btn-primary">Submit</button></a>
             </div>
 			</div>
+                <button type="button" onclick="location.href='../mainPages/booking.php'"class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="location.href='../mainPages/roomRes.php'" class="btn btn-primary">Submit</button>
+            </div>
 		</form>
         </div>
     </div>
