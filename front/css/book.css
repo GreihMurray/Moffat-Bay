@@ -3,6 +3,9 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 80vh;
+	background-image: url("../images/border.jpg");
+    background-repeat: no-repeat;
+    background-size: 2200px 900px;
 }
 .bookingBox{
   position: relative;
@@ -55,7 +58,7 @@
 .bookingRowBox{
   position: relative;
   flex: 1 1 25%;
-  height: 200px;
+  height: 315px;
   border: 1px solid #ddd;
   display: flex;
   justify-content: center;
@@ -75,3 +78,7 @@
   cursor: pointer;
   font-size: 14px;
 }
+#roomChoice {
+	width: 15%;
+}
+

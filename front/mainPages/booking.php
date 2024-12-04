@@ -48,7 +48,13 @@ require_once('../border/header.php');
             </button>
 
             <!-- Shows calendar -->
-            <script>
+
+            <!-- Calendar box -->
+        </div>
+        <div class="bookingRowBox">
+            <h5 style="text-align: center;">Check Availability</h5>
+            <div id="availability-calendar"></div>
+			<script>
                 document.addEventListener('DOMContentLoaded', function () {
                     flatpickr("#availability-calendar", {
                         mode: "range",
@@ -58,12 +64,6 @@ require_once('../border/header.php');
                     });
                 });
             </script>
-
-            <!-- Calendar box -->
-        </div>
-        <div class="bookingRowBox">
-            <h5 style="text-align: center;">Check Availability</h5>
-            <div id="availability-calendar"></div>
         </div>
     </div>
 </div>
@@ -73,6 +73,7 @@ require_once('../border/header.php');
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+		<form action="../createRes.php" method="POST">
             <div class="modal-header">
                 <h5 class="modal-title" id="bookingModalTitle">Choose Your Room</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -81,35 +82,44 @@ require_once('../border/header.php');
             </div>
             <div class="modal-body">
                 <!-- Room Options -->
+				<select name="room" id="roomChoice" required>
                 <div class="list-group mb-3">
-                    <!-- Room 1 -->
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <h5 class="mb-1">Room 1: Standard Room</h5>
-                        <p class="mb-1">A cozy room with a queen-sized bed and a forest view.</p>
-                        <small>$150/night</small>
-                    </a>
+					<!-- Room 1 -->
+                    <option href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Room 1: Standard Room<br></br></h5>
+                        <p class="mb-1">A cozy room with two Full beds and a forest view.</p>
+                        <small>$126.00/night</small>
+                    </option>
                     <!-- Room 2 -->
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <h5 class="mb-1">Room 2: Family Room</h5>
+                    <option href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Room 2: Standard Room</h5>
+                        <p class="mb-1">A cozy room with a queen-sized bed and a forest view.</p>
+                        <small>$141.75/night</small>
+                    </option>
+                    <!-- Room 3 -->
+                    <option href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Room 3: Family Room</h5>
                         <p class="mb-1">Perfect for families this room features two queen-sized beds and a kitchen.
                         </p>
-                        <small>$200/night</small>
-                    </a>
-                    <!-- Room 3 -->
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <h5 class="mb-1">Room 3: Deluxe Suite</h5>
+                        <small>$157.50/night</small>
+                    </option>
+                    <!-- Room 4 -->
+                    <option href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1">Room 4: Deluxe Suite</h5>
                         <p class="mb-1">A spacious suite with a king-sized bed, balcony and lake view.</p>
-                        <small>$250/night</small>
-                    </a>
+                        <small>$168.00/night</small>
+                    </option>
+					</select>
                 </div>
                 <!-- Calendar Section -->
                 <h5 class="mb-3">Check Availability</h5>
                 <input id="availability-calendar" class="form-control" placeholder="Select your dates">
-            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <a href="../mainPages/booking.php" <button type="button" class="btn btn-secondary">Cancel</button></a>
+               <a href="../mainPages/roomRes.php" <button type="button" class="btn btn-primary">Submit</button></a>
             </div>
+			</div>
+		</form>
         </div>
     </div>
 </div>
