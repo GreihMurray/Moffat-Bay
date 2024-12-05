@@ -1,0 +1,24 @@
+.carousel_img{
+	width: 5em;
+	height: 45em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+.attraction-carousel{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.attraction-carousel p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+.attraction-carousel h2{
+	margin: 0.2em;
+	width: 100%;
+	background-color: #8B4513;
+	color: green;
+}
