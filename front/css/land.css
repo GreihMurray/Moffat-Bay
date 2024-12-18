@@ -26,6 +26,14 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.card h3{
+	background-color: #A0522D;
+	color: #00BB00;
+	width: 100%;
+	margin-left: 5em;
+	margin-right: auto;
+	border-radius: 5px 5px 5px 5px;
+}
 .top_card {
   flex-direction: row;
   justify-content: center;
@@ -44,7 +52,6 @@
   min-height: 100px;
   flex: 1;
   align-self: stretch;
-  gap: 600px;
 }
 .card_img img {
   width: 300%;
@@ -58,29 +65,20 @@
   flex: 0;
   justify-content: center;
   align-items: stretch;
-  margin-right: 60rem;
+  margin-right: 50rem;
   display: flex;
-}
-.attra h3{
-	max-width: 100px;
-	text-align: center;
-	margin-left: 6rem;
 }
 .story{
   max-width: 150px;
   text-align: center;
   flex-direction: column;
   flex: 3;
-  justify-content: right;
+  justify-content: center;
   align-items: stretch;
-  margin-left: 6vw;
   margin-right: 3vw;
   display: flex;
 }
-.story h3{
-	margin-left: 8rem;
-	text-align: right;
-}
+
 .bottom_card{
   text-align: center;
   justify-content: center;
@@ -89,8 +87,10 @@
   display: flex;
 }
 .bottom_card h3{
-	color: #8B4513;
+	background-color: #A0522D;
+	color: #00BB00;
 	text-decoration: none;
+	margin-left: 0;
 }
 .bottom_card a{
 	text-decoration: none;

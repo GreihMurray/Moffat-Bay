@@ -40,9 +40,10 @@
 .nav {
 	background-color: #8B4513;
 	margin: auto;	
+	height: fit-content;
 }
-.nav a  {
-    color: green;
+.nav a {
+    color: #00BB00;
     cursor: pointer;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -55,13 +56,18 @@
     border-radius: 20px 20px 0 0;
     border-width: 2px;
 	overflow: none;
+	background-color: #7C3513;
+}
+.nav a:hover{
+	color: #00EE00;
+	background-color: #8D4624;
 }
  #footer{
      display: flex;
 	 margin-top: auto;
      background-color: #8B4513;
      justify-content: space-between;
-     color: green;
+     color: #00BB00;
      align-content: center;
      text-align: center;
  }
@@ -85,8 +91,8 @@
   font-size: 15px;
   line-height: 20px;
   transition: border-color .3s;
-  box-shadow: inset 0 0 0 2px green;
-  outline-color: green;
+  box-shadow: inset 0 0 0 2px #00BB00;
+  outline-color: #00BB00;
  }
  #newsletter .sub_button{
   letter-spacing: 2px;
@@ -94,7 +100,7 @@
   font-family: Karla, sans-serif;
   font-size: 13px;
   box-shadow: inset 0 0 0 2px green;
-  outline-color: green;
+  outline-color: #00BB00;
 	 
  }
  .media_icons {
