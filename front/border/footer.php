@@ -10,7 +10,7 @@
 			<form id="subscribe-news" class="footer-subscribe" name="subscribe-Form">
 				<input id="email" class="input" maxlength="256" name="email" data-name="Email_1" 
 					placeholder="Your Email" type="email" required="">
-				<input class="sub_button" type="submit" data-wait="Please wait..." value="Subscribe">
+				<input class="sub_button" type="submit" data-wait="Please wait..." value="Subscribe"style="color: #00BB00;">
 			</form>		
         </div>
         <div id="social">

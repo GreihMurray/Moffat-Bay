@@ -33,25 +33,6 @@ require_once('../border/header.php');
     <!-- Featured room box -->
     <div class="bookingRow">
         <div class="bookingRowBox">
-            <img src="../images/featureRooms.jpg">
-            Feature Room
-        </div>
-        <!-- Description box -->
-        <div class="bookingRowBox">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
-
-        <!-- Book a room box -->
-        <div class="bookingRowBox">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">
-                Book a Room
-            </button>
-
-            <!-- Shows calendar -->
-
-            <!-- Calendar box -->
-        </div>
-        <div class="bookingRowBox">
             <h5 style="text-align: center;">Check Availability</h5>
             <div id="availability-calendar"></div>
 			<script>
@@ -64,6 +45,11 @@ require_once('../border/header.php');
                     });
                 });
             </script>
+        </div>
+		<div class="bookingRowBox">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">
+                Book a Room
+            </button>
         </div>
     </div>
 </div>
